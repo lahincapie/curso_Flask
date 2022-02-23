@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+
+
+{% block title %}
+{{ super() }}
+404
+{% endblock %}
+
+
+{% block content %}
+    <h1>Ceci n'est pas une page</h1>
+    <div class="wrapper">
+        <section class="text">
+            <section class="error-container">
+                <span><span>4</span></span>
+                <span>0</span>
+                <span><span>4</span></span>
+            </section>
+        </section>
+        <section class="img">
+            <img src="{{ url_for('static', filename='images/dinosaurios.png')}}" alt="dinosaurio">
+        </section>
+    </div>
+    <footer class="footer">
+        <p>{{ error }}</p>
+        <p>lahincapie ❤️</p>
+    </footer>
+{% endblock %}
