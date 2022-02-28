@@ -1,0 +1,4 @@
+flask
+flask-bootstrap5
+flask-wtf
+flask-testing
